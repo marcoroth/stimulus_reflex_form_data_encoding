@@ -1,15 +1,3 @@
-GIT
-  remote: https://github.com/hopsoft/stimulus_reflex.git
-  revision: 68f2b55edefe50922e1504e016b79e361add9d19
-  branch: master
-  specs:
-    stimulus_reflex (3.4.0)
-      cable_ready (>= 4.4)
-      nokogiri
-      rack
-      rails (>= 5.2)
-      redis
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -179,6 +167,12 @@ GEM
     standard (0.11.0)
       rubocop (= 1.7.0)
       rubocop-performance (= 1.9.2)
+    stimulus_reflex (3.4.0)
+      cable_ready (>= 4.4)
+      nokogiri
+      rack
+      rails (>= 5.2)
+      redis
     thor (1.1.0)
     thread_safe (0.3.6)
     tzinfo (1.2.9)
@@ -211,7 +205,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.2)
   redis (>= 4.0)
   standard
-  stimulus_reflex!
+  stimulus_reflex (= 3.4.0)
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 
