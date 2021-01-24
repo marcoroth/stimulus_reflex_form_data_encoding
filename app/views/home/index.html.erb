@@ -1,6 +1,6 @@
 Total Tasks: <%= Task.all.count %><br/><br/>
 
-Last Task Name: <%= Task.last.name %><br/><br/>
+Last Task Name: <%= Task.last&.name %><br/><br/>
 Params: <%= params %><br/><br/>
 Task Params: <%= @task_params %><br/><br/>
 Time: <%= Time.now %><br/><br/>
