@@ -1,5 +1,16 @@
-<button data-reflex="click->Example#test">Test</button>
+Total Tasks: <%= Task.all.count %><br/><br/>
 
-<% if @stimulus_reflex %>
-  <h1>Success! Random: <%= (rand * 100).to_i %></h1>
+Last Task Name: <%= Task.last.name %><br/><br/>
+Params: <%= params %><br/><br/>
+Task Params: <%= @task_params %><br/><br/>
+Time: <%= Time.now %><br/><br/>
+
+
+<% [";", "%", "&", "+"].each do |char| %>
+
+<form data-reflex="submit->Task#create_task">
+  <input type="text" name="task[name]" value="Task1<%= char %>Task2">
+  <input type="submit">
+</form>
+
 <% end %>
